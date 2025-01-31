@@ -1,4 +1,8 @@
-import { EnvironmentOutlined, GlobalOutlined } from "@ant-design/icons";
+import {
+  DownOutlined,
+  EnvironmentOutlined,
+  GlobalOutlined,
+} from "@ant-design/icons";
 import { Button, Select } from "antd";
 import "./header.css";
 
@@ -18,39 +22,36 @@ export default function DiscountMessage() {
           <div className="button-block__languages">
             <GlobalOutlined style={{ fontSize: 25 }} />
             <Select
-              suffixIcon=""
-              variant="filled"
-              labelInValue
+              suffixIcon={<DownOutlined />}
               defaultValue={{
                 value: "eu",
                 label: "eu",
               }}
               style={{
-                width: 120,
+                width: 60,
               }}
               onChange={handleChange}
               options={[
                 {
-                  value: "jack",
-                  label: "Jack (100)",
+                  value: "ru",
+                  label: "ru",
                 },
                 {
-                  value: "lucy",
-                  label: "Lucy (101)",
+                  value: "en",
+                  label: "en",
                 },
               ]}
             />
           </div>
-          <div className="button-block__location">
-            <Button
-              size="large"
-              color="default"
-              variant="link"
-              icon={<EnvironmentOutlined />}
-            >
-              Bishkek
-            </Button>
-          </div>
+          <Button
+            style={{ color: "white", padding: 2 }}
+            size="large"
+            color="default"
+            variant="link"
+            icon={<EnvironmentOutlined className="iconStyle" />}
+          >
+            Bishkek
+          </Button>
         </div>
       </div>
     </div>

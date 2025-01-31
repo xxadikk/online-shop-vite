@@ -1,5 +1,9 @@
+header {
+  background-color: #ffffff;
+}
+
 .discoint-message {
-  background-color: #8d7b7b;
+  background-color: #151515;
   color: #ffffff;
 }
 .discoint-message__body {
@@ -11,12 +15,17 @@
 
 .discoint-message__body .message-block {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0 5px;
 }
+.discoint-message__body div {
+  width: 30%;
+}
 
 .discoint-message__body .message-block span {
-  font-weight: 100;
+  font-weight: 250;
+  color: #ffffff;
 }
 .discoint-message__body .message-block p {
   background-color: #ffffff;
@@ -29,9 +38,64 @@
 .discoint-message__body .button-block {
   display: flex;
   align-items: center;
+  justify-content: end;
+  gap: 0 5px;
 }
 
 .button-block .button-block__languages {
   display: flex;
+  justify-content: end;
   gap: 0 5px;
 }
+
+/* Menu start */
+.menu-top {
+  border-bottom: 1px solid #dddddd;
+}
+.menu-top__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.menu-top__body .menu-top__left,
+.menu-top__body .menu-top__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 15px;
+}
+.left-block__logo img {
+  width: 120px;
+}
+.menu-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.menu-bottom .nav-menu {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.menu-bottom .nav-menu a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #151515;
+}
+.menu-bottom .nav-menu a:hover {
+  border-bottom: 2px solid #20a647;
+  padding: 0 0 2px 0;
+}
+.active {
+  border-bottom: 2px solid #20a647;
+  padding: 0 0 2px 0;
+}
+
+/* Menu end */
