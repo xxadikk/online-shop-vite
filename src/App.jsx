@@ -9,9 +9,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Header>Header</Header>
+        <Header />
         <Routing />
-        <Footer>Footer</Footer>
+        <Footer />
       </Layout>
     </BrowserRouter>
   );

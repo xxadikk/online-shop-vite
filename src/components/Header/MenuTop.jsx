@@ -1,8 +1,8 @@
 import { Button, Input } from "antd";
 import catalogicon from "../assets/catalogIcon.svg";
-import logo from "../assets/logo.svg";
 import searchicon from "../assets/searchIcon.svg";
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import logo from "../helpers/const";
 
 const MenuTop = () => {
   return (
