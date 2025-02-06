@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+.productCard {
+  background-color: #ffffff00;
+  flex: 0 0 18.5%; /* Фиксированная ширина 25% для каждого элемента */
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+}
+
+.productCards__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px 30px;
+}
+.ant-card .ant-card-body {
+  padding: 0;
+  background-color: #ffffff00;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.productCard-like {
+  position: absolute;
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3%;
+  left: 80%;
+}
+
+.productCard .productCard-img {
+  border-radius: 12px;
+}
+
+.productCard-like .productCard-like__icon {
+  font-size: 24px;
+}
+
+.productCard .productCard-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.productCard-rating .productCard-rating__icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 3px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.productCard-rating .productCard-like__icon p {
+  font-family: "Questrial";
+}
+
+.productCard-rating__title {
+  color: #16161679; /* Меняет цвет текста, но не самих маркеров */
+}
+
+.productCard-rating__title li::marker {
+  color: #16161679; /* Меняет цвет маркеров */
+}
+
+.productCard__btn {
+  display: flex;
+  justify-content: space-between;
+}
