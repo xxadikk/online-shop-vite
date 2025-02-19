@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./components/pages/HomePage";
-import NewsPage from "./components/pages/NewsPage";
-import ProductsPage from "./components/pages/ProductsPage";
-import ProfilePage from "./components/pages/ProfilePage";
-import AboutUsPage from "./components/pages/AboutUsPage";
-import FAQPage from "./components/pages/FAQPage";
+import HomePage from "./pages/HomePage";
+import NewsPage from "./pages/NewsPage";
+import ProductsPage from "./pages/ProductsPage";
+import ProfilePage from "./pages/ProfilePage";
+import AboutUsPage from "./pages/AboutUsPage";
+import FAQPage from "./pages/FAQPage";
 
 export default function Routing() {
   const PUBLIC_PAGES = [
