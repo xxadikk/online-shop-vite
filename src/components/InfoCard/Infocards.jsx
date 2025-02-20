@@ -1,8 +1,10 @@
 import { Button } from "antd";
 import "../InfoCard/InfoCard.css";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 const Infocards = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="info-cards">
@@ -23,6 +25,7 @@ const Infocards = () => {
                 variant="solid"
                 icon={<ArrowRightOutlined />}
                 iconPosition="end"
+                onClick={() => navigate("/about-us")}
               >
                 About Us
               </Button>
@@ -49,6 +52,7 @@ const Infocards = () => {
                 variant="solid"
                 icon={<ArrowRightOutlined />}
                 iconPosition="end"
+                onClick={() => navigate("/products")}
               >
                 Products
               </Button>

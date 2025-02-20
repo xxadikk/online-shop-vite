@@ -3,14 +3,16 @@ import catalogicon from "../assets/catalogIcon.svg";
 import searchicon from "../assets/searchIcon.svg";
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import logo from "../helpers/const";
+import { useNavigate } from "react-router-dom";
 
 const MenuTop = () => {
+  const navigate = useNavigate();
   return (
     <div className="menu-top">
       <div className="container">
         <div className="menu-top__body">
           <div className="menu-top__left">
-            <div className="left-block__logo">
+            <div className="left-block__logo" onClick={() => navigate("/")}>
               <img src={logo} alt="" />
             </div>
             <Button

@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
-
+.productCards {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px 0;
+}
+.productCards h1 {
+  color: #20a647;
+  font-size: 34px;
+}
 .productCard {
   background-color: #ffffff00;
   flex: 0 0 18.5%; /* Фиксированная ширина 25% для каждого элемента */
