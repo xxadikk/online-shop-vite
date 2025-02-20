@@ -1,6 +1,8 @@
 import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="banner">
@@ -19,6 +21,7 @@ const Banner = () => {
                 fontWeight: 500,
                 padding: "0 30px",
               }}
+              onClick={() => navigate("/products")}
               size="large"
               color="default"
               variant="solid"

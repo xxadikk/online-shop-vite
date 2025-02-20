@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout className="app">
         <Header />
         <Routing />
         <Footer />
