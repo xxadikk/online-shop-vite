@@ -1,8 +1,9 @@
-import Banner from "../components/Home-Page/Banner";
-import Categories from "../components/Home-Page/Categories";
+import Banner from "../components/HomeView/Banner";
+import Categories from "../components/HomeView/Categories";
 import ProductCards from "../components/ProductCards/ProductCards";
 import Infocards from "../components/InfoCard/Infocards";
-import "../components/Home-Page/homepage.css";
+import "../components/HomeView/homepage.css";
+import PartnersInfo from "../components/HomeView/PartnersInfo";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Categories />
       <ProductCards />
       <Infocards />
+      <PartnersInfo />
     </div>
   );
 }
