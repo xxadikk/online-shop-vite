@@ -1,14 +1,17 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MenuBottom = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
+
   return (
     <div className="menu-bottom">
       <ul className="nav-menu">
         <li>
           <NavLink to="/" className={pathname === "/" ? "active" : ""}>
-            Main
+            {t("header.main")}
           </NavLink>
         </li>
         <li>
@@ -16,7 +19,7 @@ const MenuBottom = () => {
             to="/products"
             className={pathname === "/products" ? "active" : ""}
           >
-            Shop
+            {t("header.shop")}
           </NavLink>
         </li>
         <li>
@@ -24,17 +27,17 @@ const MenuBottom = () => {
             to="/about-us"
             className={pathname === "/about-us" ? "active" : ""}
           >
-            About Us
+            {t("header.about_us")}
           </NavLink>
         </li>
         <li>
           <NavLink to="/news" className={pathname === "/news" ? "active" : ""}>
-            News
+            {t("header.news")}
           </NavLink>
         </li>
         <li>
           <NavLink to="/faq" className={pathname === "/faq" ? "active" : ""}>
-            FAQ
+            {t("header.faq")}
           </NavLink>
         </li>
       </ul>

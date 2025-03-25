@@ -1,9 +1,9 @@
 /* BANNER START */
 .banner {
-  height: 392px;
   margin: 30px 0 40px 0;
   background-color: #20a647;
-  border-radius: 16px;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .banner .banner-block__title {
@@ -11,9 +11,10 @@
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  padding: 3% 4%;
+  padding: 3% 3%;
   height: 100%;
   width: 50%;
+  gap: 25px;
 }
 
 .banner .banner-block__title h1 {
@@ -28,12 +29,9 @@
 .banner .banner-block {
   height: 100%;
   background: url(../assets/bannerImg.svg) 100% 100% no-repeat,
-    url(../assets/broccoli.svg) 60% 10% no-repeat,
-    url(../assets/nuts.svg) 82% 10% no-repeat,
-    url(../assets/carrot.svg) 68% 27% no-repeat,
-    url(../assets/dish.svg) 53% 80% no-repeat,
-    url(../assets/eggplant.svg) 70% 70% no-repeat,
-    url(../assets/onion.svg) 78% 97% no-repeat;
+    url(../assets/broccoli.svg) 60% 10% no-repeat, url(../assets/nuts.svg) 82% 10% no-repeat,
+    url(../assets/carrot.svg) 68% 27% no-repeat, url(../assets/dish.svg) 53% 80% no-repeat,
+    url(../assets/eggplant.svg) 70% 70% no-repeat, url(../assets/onion.svg) 78% 97% no-repeat;
 }
 
 /* BANNER END */
@@ -118,6 +116,7 @@
 .partnersInfo__title h1 {
   font-size: 36px;
   color: #151515;
+  text-transform: uppercase;
 }
 
 .partnersInfo__title p {

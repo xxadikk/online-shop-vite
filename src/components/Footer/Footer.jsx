@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+
 import logo from "../helpers/const";
 import "./Footer.css";
 import LogoTelegram from "../assets/telegramIcon.svg";
@@ -6,9 +7,12 @@ import Logofacebook from "../assets/facebookIcon.svg";
 import LogoInsta from "../assets/instaIcon.svg";
 import LogoWhatsapp from "../assets/whatsappIcon.svg";
 import LogoYoutube from "../assets/youtubeIcon.svg";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -19,112 +23,94 @@ const Footer = () => {
                 <img src={logo} alt="logo" />
               </div>
               <div className="block_logo-title">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor
-                </p>
+                <p>{t("footer.description")}</p>
               </div>
             </div>
             <div className="block_menu">
-              <h3>Pages</h3>
+              <h3>{t("footer.pages")}</h3>
               <ul>
                 <li>
-                  <Link
-                    className={pathname === "/" ? "active_footer" : ""}
-                    to="/"
-                  >
-                    Main
+                  <Link className={pathname === "/" ? "active_footer" : ""} to="/">
+                    {t("header.main")}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className={pathname === "/products" ? "active_footer" : ""}
-                    to="/products"
-                  >
-                    Shop
+                  <Link className={pathname === "/products" ? "active_footer" : ""} to="/products">
+                    {t("header.shop")}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className={pathname === "/about-us" ? "active_footer" : ""}
-                    to="/about-us"
-                  >
-                    About Us
+                  <Link className={pathname === "/about-us" ? "active_footer" : ""} to="/about-us">
+                    {t("header.about_us")}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className={pathname === "/news" ? "active_footer" : ""}
-                    to="/news"
-                  >
-                    News
+                  <Link className={pathname === "/news" ? "active_footer" : ""} to="/news">
+                    {t("header.news")}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className={pathname === "/faq" ? "active_footer" : ""}
-                    to="/faq"
-                  >
-                    FAQ
+                  <Link className={pathname === "/faq" ? "active_footer" : ""} to="/faq">
+                    {t("header.faq")}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="block_contacts">
-              <h3>Contacts</h3>
+              <h3>{t("footer.contacts")}</h3>
               <ul>
                 <li>
-                  <span>Phone number</span>
+                  <span>{t("footer.phone")}</span>
                   <a href="#">+996 (550) 34 56 77</a>
                 </li>
                 <li>
-                  <span>E-Mail</span>
+                  <span>{t("footer.email")}</span>
                   <a href="#">example@gmail.com</a>
                 </li>
               </ul>
             </div>
             <div className="block_social">
-              <h3>Social media</h3>
+              <h3>{t("footer.social_media")}</h3>
               <div className="social-body">
                 <ul>
                   <li>
                     <div>
-                      <img src={LogoWhatsapp} alt="WhatsApp" />{" "}
+                      <img src={LogoWhatsapp} alt="WhatsApp" />
                     </div>
-                    <a href="">WhatsApp</a>
+                    <a href="">{t("footer.whatsapp")}</a>
                   </li>
                   <li>
                     <div>
-                      <img src={LogoTelegram} alt="Telegram" />{" "}
+                      <img src={LogoTelegram} alt="Telegram" />
                     </div>
-                    <a href="#">Telegram</a>
+                    <a href="#">{t("footer.telegram")}</a>
                   </li>
                   <li>
                     <div>
-                      <img src={LogoInsta} alt="Instagram" />{" "}
+                      <img src={LogoInsta} alt="Instagram" />
                     </div>
-                    <a href="#">Инстаграм</a>
+                    <a href="#">{t("footer.instagram")}</a>
                   </li>
                 </ul>
                 <ul>
                   <li>
                     <div>
-                      <img src={Logofacebook} alt="facebook" />{" "}
+                      <img src={Logofacebook} alt="facebook" />
                     </div>
-                    <a href="#">Фейсбук</a>
+                    <a href="#">{t("footer.facebook")}</a>
                   </li>
                   <li>
                     <div>
-                      <img src={LogoYoutube} alt="Youtube" />{" "}
+                      <img src={LogoYoutube} alt="Youtube" />
                     </div>
-                    <a href="#">Youtube</a>
+                    <a href="#">{t("footer.youtube")}</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="top-block">
-            <span>© 2024 Web Site All rights Recerved.</span>
+            <span>© 2025 {t("footer.rights")}</span>
           </div>
         </div>
       </div>

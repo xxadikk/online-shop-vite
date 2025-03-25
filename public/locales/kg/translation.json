@@ -1,0 +1,41 @@
+{
+  "header": {
+    "discount": "Бардык товарларга 25% арзандатуу! Азыр текшерип көрүңүз!",
+    "location": "Бишкек",
+    "main": "Башкы бет",
+    "shop": "Дүкөн",
+    "about_us": "Биз жөнүндө",
+    "news": "Жаңылыктар",
+    "faq": "Ча|Во",
+    "catalog": "Каталог",
+    "search_placeholder": "Өнүмдөрдү издөөнү",
+    "favorites": "Жактыруу",
+    "cart": "Корзина",
+    "login": "Кирүү"
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "pages": "Баракчалар",
+    "contacts": "Байланыштар",
+    "phone": "Телефон номери",
+    "email": "E-Mail",
+    "social_media": "Социалдык тармактар",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "rights": "Бардык укуктар корголгон."
+  },
+  "home_page": {
+    "banner_title": "Жаңы азык-түлүктөрүңүз эшигиңизге жеткирилет",
+    "banner_description": "Жаңы продукт тууралуу маалымдагандыктан кубанычтабыз! Ассортиментте текшерилген жана ишенимдүү, узак кызмат мөөнөтүн камсыз кылган товарлар гана камтылган.",
+    "to_shop": "Дүкөнгө",
+    "categories_title": "Категория",
+    "partners_title": "Биздин партнерлор",
+    "partners_description": "Биздеги ар кандай муктаждыктар үчүн органикалык жана экологиялык таза азык-түлүктөрдүн толук коллекциясы менен таанышыңыз."
+  },
+  "ru": "Орусча",
+  "en": "Англисче",
+  "kg": "Кыргызча"
+}

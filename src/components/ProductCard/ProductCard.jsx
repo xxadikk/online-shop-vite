@@ -1,10 +1,6 @@
 import { Button, Card } from "antd";
 import { motion } from "framer-motion";
-import {
-  HeartFilled,
-  HeartOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+import { HeartFilled, HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import starIcon from "../assets/starIcon.svg";
 
@@ -31,10 +27,6 @@ const ProductCard = () => {
           className="productCard-img"
           alt="example"
           src="https://ginginanddry.net.au/wp-content/uploads/2020/03/2002_Sulphite-Sulphur-Free-Dried-Fruit.jpg"
-          style={{
-            height: "22vw",
-            objectFit: "cover",
-          }}
         />
       }
     >

@@ -9,9 +9,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Layout className="app">
-        <Header />
         <Routing />
-        <Footer />
       </Layout>
     </BrowserRouter>
   );

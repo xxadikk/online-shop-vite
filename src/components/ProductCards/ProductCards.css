@@ -1,42 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
 .productCards {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   gap: 26px 0;
 }
+
 .productCards h1 {
   color: #20a647;
   font-size: 34px;
-}
-.productCard {
-  background-color: #ffffff00;
-  flex: 0 0 18.5%; /* Фиксированная ширина 25% для каждого элемента */
-  box-sizing: border-box;
-  border-radius: 50px;
-  border: none;
 }
 
 .productCards__body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px 30px;
+  gap: 24px;
+  justify-content: space-between;
 }
+
+.productCard {
+  background-color: #ffffff00;
+  flex: 0 0 calc(23% - 15px);
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+}
+
 .ant-card .ant-card-body {
   padding: 0;
   background-color: #ffffff00;
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 10px 0;
+  gap: 12px 0;
+}
+.ant-card .ant-card-cover > * {
+  border-radius: 10px;
 }
 
 .productCard-like {
   position: absolute;
   background-color: #ffffff;
-  width: 44px;
-  height: 44px;
+  width: 12%;
+  height: 8%;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -45,23 +53,25 @@
   left: 80%;
 }
 
-.productCard .productCard-img {
+.productCard-img {
   border-radius: 12px;
+  width: 100%;
+  height: 17vw;
+  object-fit: cover;
 }
 
 .productCard-like .productCard-like__icon {
   font-size: 24px;
 }
 
-.productCard .productCard-rating {
+.productCard-rating {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: 0 30px;
 }
 
-.productCard-rating .productCard-rating__icon {
+.productCard-rating__icon {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,19 +80,69 @@
   font-size: 16px;
 }
 
-.productCard-rating .productCard-like__icon p {
-  font-family: "Questrial";
-}
-
 .productCard-rating__title {
-  color: #16161679; /* Меняет цвет текста, но не самих маркеров */
+  color: #16161679;
+  margin: 0;
 }
 
 .productCard-rating__title li::marker {
-  color: #16161679; /* Меняет цвет маркеров */
+  color: #16161679;
 }
 
 .productCard__btn {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .productCards h1 {
+    font-size: 30px;
+  }
+
+  .productCard {
+    flex: 0 0 calc(25% - 12px);
+  }
+  .productCards__body {
+    gap: 12px;
+  }
+  .productCard-img {
+    height: 25vw;
+  }
+  .productCard-like {
+    width: 35px;
+    height: 35px;
+    left: 78%;
+  }
+  .productCard-like .productCard-like__icon {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productCard {
+    flex: 0 0 calc(50% - 12px);
+  }
+  .productCard-img {
+    height: 30vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .productCards h1 {
+    font-size: 28px;
+  }
+  .productCard {
+    flex: 0 0 100%;
+  }
+  .productCard-img {
+    height: 50vw;
+  }
+  .productCard__btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .productCard__btn .ant-btn {
+    width: 100%;
+  }
 }

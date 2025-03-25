@@ -4,9 +4,12 @@ import searchicon from "../assets/searchIcon.svg";
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import logo from "../helpers/const";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const MenuTop = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   return (
     <div className="menu-top">
       <div className="container">
@@ -26,7 +29,7 @@ const MenuTop = () => {
               variant="solid"
               icon={<img className="iconStyle" src={catalogicon} />}
             >
-              Catalog
+              {t("header.catalog")}
             </Button>
             <Input
               style={{
@@ -36,7 +39,7 @@ const MenuTop = () => {
                 gap: "0 20px",
               }}
               variant="borderless"
-              placeholder="Search products"
+              placeholder={t("header.search_placeholder")}
               prefix={<img className="iconStyle" src={searchicon} />}
             />
           </div>
@@ -48,7 +51,7 @@ const MenuTop = () => {
               variant="link"
               icon={<HeartOutlined className="iconStyle" />}
             >
-              Favorites
+              {t("header.favorites")}
             </Button>
             <Button
               style={{ color: "#151515" }}
@@ -57,7 +60,7 @@ const MenuTop = () => {
               variant="link"
               icon={<ShoppingCartOutlined className="iconStyle" />}
             >
-              Cart
+              {t("header.cart")}
             </Button>
             <Button
               style={{
@@ -68,8 +71,9 @@ const MenuTop = () => {
               size="large"
               color="default"
               variant="solid"
+              onClick={() => navigate("/login")}
             >
-              Log in
+              {t("header.login")}
             </Button>
           </div>
         </div>

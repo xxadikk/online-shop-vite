@@ -1,19 +1,18 @@
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Banner = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); // Инициализация перевода
+
   return (
     <div className="container">
       <div className="banner">
         <div className="banner-block">
           <div className="banner-block__title">
-            <h1>Fresh Groceries Delivered To Your Doorstep</h1>
-            <p>
-              We are pleased to announce a new product development! The range
-              includes only proven products that guarantee reliability and long
-              service life.
-            </p>
+            <h1>{t("home_page.banner_title")}</h1>
+            <p>{t("home_page.banner_description")}</p>
             <Button
               style={{
                 color: "#20A647",
@@ -26,7 +25,7 @@ const Banner = () => {
               color="default"
               variant="solid"
             >
-              To shop
+              {t("home_page.to_shop")}
             </Button>
           </div>
         </div>

@@ -1,0 +1,41 @@
+{
+  "header": {
+    "discount": "Discount 25% for all product! Check out now!",
+    "location": "Bishkek",
+    "main": "Main",
+    "shop": "Shop",
+    "about_us": "About Us",
+    "news": "News",
+    "faq": "FAQ",
+    "catalog": "Catalog",
+    "search_placeholder": "Search products",
+    "favorites": "Favorites",
+    "cart": "Cart",
+    "login": "Log in"
+  },
+  "footer": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "pages": "Pages",
+    "contacts": "Contacts",
+    "phone": "Phone number",
+    "email": "E-Mail",
+    "social_media": "Social media",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "rights": "Web Site All rights Reserved."
+  },
+  "home_page": {
+    "banner_title": "Fresh Groceries Delivered To Your Doorstep",
+    "banner_description": "We are pleased to announce a new product development! The range includes only proven products that guarantee reliability and long service life.",
+    "to_shop": "To shop",
+    "categories_title": "Categories",
+    "partners_title": "Our partners",
+    "partners_description": "Discover Our Complete Collection of Organic and Eco-Friendly Products for Every Need."
+  },
+  "ru": "Russian",
+  "en": "English",
+  "kg": "Kyrgyz"
+}
